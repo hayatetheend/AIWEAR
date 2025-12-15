@@ -126,4 +126,30 @@ document.addEventListener('DOMContentLoaded', () => {
     featureCards.forEach((card, index) => {
         card.style.transitionDelay = `${index * 0.1}s`;
     });
+    // Floating particles for hero background
+    const heroBg = document.querySelector('.hero-bg');
+    if (heroBg) {
+        const particlesContainer = document.createElement('div');
+        particlesContainer.className = 'hero-particles';
+        heroBg.appendChild(particlesContainer);
+
+        for (let i = 0; i < 40; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            // Random position
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            // Random animation properties
+            particle.style.animationDelay = `${Math.random() * 5}s`;
+            particle.style.animationDuration = `${5 + Math.random() * 5}s`;
+            particle.style.opacity = Math.random() * 0.5 + 0.2;
+
+            // Random size variation
+            const size = Math.random() * 3 + 2;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+
+            particlesContainer.appendChild(particle);
+        }
+    }
 });
