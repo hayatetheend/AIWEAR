@@ -127,9 +127,12 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transitionDelay = `${index * 0.1}s`;
     });
     // Floating particles for hero background
+    console.log('Script executing particle logic');
     const heroBg = document.querySelector('.hero-bg');
+    console.log('Hero BG found:', heroBg);
     if (heroBg) {
         const particlesContainer = document.createElement('div');
+        console.log('Creating particles container');
         particlesContainer.className = 'hero-particles';
         heroBg.appendChild(particlesContainer);
 
