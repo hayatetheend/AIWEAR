@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aiWEAR - AIで実現する次世代アパレルEC撮影</title>
+    <meta name="description" content="aiWEARは商品画像をアップロードするだけで、AIモデルによる着用写真とEC用高品質画像を自動生成。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Sans+JP:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ナビゲーション -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">aiWEAR</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#concept">CONCEPT</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#models">AI MODELS</a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">START FREE</a>
+            <button class="mobile-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-noise"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tagline">AI Fashion Technology</p>
+            <h1 class="hero-title">
+                <span class="title-line">AIが紡ぐ、</span>
+                <span class="title-line">新しいファッションの物語</span>
+            </h1>
+            <p class="hero-subtitle">
+                商品を撮影するだけで、AIモデルが着用写真を生成。<br>
+                カメラマンもモデルも不要な、次世代のEC撮影体験を。
+            </p>
+            <div class="hero-scroll">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AIモデルマーキー -->
+    <section class="models-marquee" id="models">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model1.jpg" alt="AI Model - Winter Style">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Winter Collection</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model2.png" alt="AI Model - Casual">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Casual Style</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model3.jpg" alt="AI Model - Street">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Street Fashion</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model4.jpg" alt="AI Model - Outdoor">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Outdoor Look</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model5.jpg" alt="AI Model - Lifestyle">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Lifestyle</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model6.jpg" alt="AI Model - Retro">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Retro Style</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model7.jpg" alt="AI Model - Urban">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Urban Casual</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model8.jpg" alt="AI Model - Snow">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Snow Look</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model9.jpg" alt="AI Model - Cozy">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Cozy Style</p>
+                </div>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model1.jpg" alt="AI Model - Winter Style">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Winter Collection</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model2.png" alt="AI Model - Casual">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Casual Style</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model3.jpg" alt="AI Model - Street">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Street Fashion</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model4.jpg" alt="AI Model - Outdoor">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Outdoor Look</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model5.jpg" alt="AI Model - Lifestyle">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Lifestyle</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model6.jpg" alt="AI Model - Retro">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Retro Style</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model7.jpg" alt="AI Model - Urban">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Urban Casual</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model8.jpg" alt="AI Model - Snow">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Snow Look</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="images/model9.jpg" alt="AI Model - Cozy">
+                        <div class="model-overlay">
+                            <span class="model-tag">AI Generated</span>
+                        </div>
+                    </div>
+                    <p class="model-name">Cozy Style</p>
+                </div>
+            </div>
+        </div>
+        <div class="marquee-text">
+            <span>ENDLESS POSSIBILITIES</span>
+            <span>・</span>
+            <span>無限のAIモデル</span>
+            <span>・</span>
+            <span>ENDLESS POSSIBILITIES</span>
+        </div>
+    </section>
+
+    <!-- コンセプトセクション -->
+    <section class="concept" id="concept">
+        <div class="concept-container">
+            <div class="concept-header">
+                <span class="section-label">CONCEPT</span>
+                <h2 class="concept-title">
+                    撮影の常識を、<br>
+                    <em>覆す。</em>
+                </h2>
+            </div>
+            <div class="concept-content">
+                <p class="concept-lead">
+                    従来のEC撮影には、モデル、カメラマン、スタジオ、そして膨大な時間とコストが必要でした。
+                </p>
+                <p class="concept-text">
+                    aiWEARは、最先端のAI技術により、商品画像をアップロードするだけで、プロ品質のモデル着用写真とスタジオ撮影画像を自動生成します。あなたのブランドストーリーを、より美しく、より速く、より低コストで。
+                </p>
+            </div>
+        </div>
+        <div class="concept-stats">
+            <div class="stat-item">
+                <span class="stat-value">90<small>%</small></span>
+                <span class="stat-label">コスト削減</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-value">24<small>h</small></span>
+                <span class="stat-label">スピード納品</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-value">∞</span>
+                <span class="stat-label">AIモデル</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- フィーチャーセクション -->
+    <section class="features" id="features">
+        <div class="features-header">
+            <span class="section-label">FEATURES</span>
+            <h2 class="features-title">aiWEARができること</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-number">01</div>
+                <h3 class="feature-title">AIモデル着用写真</h3>
+                <p class="feature-desc">
+                    多様な体型、年齢、スタイルのAIモデルが、あなたの商品を美しく着こなします。ポーズや背景もカスタマイズ可能。
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-number">02</div>
+                <h3 class="feature-title">スタジオ品質画像</h3>
+                <p class="feature-desc">
+                    プロのライティングを再現した、EC用の高品質な商品画像を自動生成。白背景から雰囲気のあるシーンまで。
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-number">03</div>
+                <h3 class="feature-title">24時間対応</h3>
+                <p class="feature-desc">
+                    AIだから深夜でも休日でも24時間対応。急な撮影ニーズにも即座に応えます。大量処理も得意です。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After セクション -->
+    <section class="transform" id="transform">
+        <div class="transform-container">
+            <div class="transform-header">
+                <span class="section-label">TRANSFORM</span>
+                <h2 class="transform-title">
+                    商品が、<br>
+                    <em>魔法のように変わる</em>
+                </h2>
+            </div>
+            <div class="transform-showcase">
+                <!-- パーカーのビフォー・アフター -->
+                <div class="showcase-item">
+                    <div class="showcase-image before">
+                        <span class="showcase-tag">商品画像</span>
+                        <img src="images/before_hoodie.png" alt="商品画像 - パーカー">
+                    </div>
+                    <div class="showcase-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <div class="showcase-image after">
+                        <span class="showcase-tag">AIモデル着用</span>
+                        <img src="images/after_hoodie2.jpg" alt="AIモデル着用 - パーカー">
+                    </div>
+                </div>
+                <!-- ダウンジャケットのビフォー・アフター -->
+                <div class="showcase-item">
+                    <div class="showcase-image before">
+                        <span class="showcase-tag">商品画像</span>
+                        <img src="images/before_jacket.jpg" alt="商品画像 - ダウンジャケット">
+                    </div>
+                    <div class="showcase-arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <div class="showcase-image after">
+                        <span class="showcase-tag">AIモデル着用</span>
+                        <img src="images/after_jacket.jpg" alt="AIモデル着用 - ダウンジャケット">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ステップセクション -->
+    <section class="steps">
+        <div class="steps-container">
+            <div class="steps-header">
+                <span class="section-label">HOW IT WORKS</span>
+                <h2 class="steps-title">3ステップで完了</h2>
+            </div>
+            <div class="steps-flow">
+                <div class="step-item">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-number">STEP 01</span>
+                        <h3>アップロード</h3>
+                        <p>商品画像をドラッグ&ドロップ</p>
+                    </div>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-number">STEP 02</span>
+                        <h3>カスタマイズ</h3>
+                        <p>モデル・背景・スタイルを選択</p>
+                    </div>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item">
+                    <div class="step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <div class="step-content">
+                        <span class="step-number">STEP 03</span>
+                        <h3>ダウンロード</h3>
+                        <p>高品質画像をすぐに取得</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金セクション -->
+    <section class="pricing" id="pricing">
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <span class="section-label">PRICING</span>
+                <h2 class="pricing-title">シンプルな料金体系</h2>
+                <p class="pricing-subtitle">ビジネス規模に合わせて選べるプラン</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Starter</h3>
+                        <p>小規模ショップ向け</p>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">¥</span>
+                        <span class="value">29,800</span>
+                        <span class="period">/月</span>
+                    </div>
+                    <ul class="price-features">
+                        <li>月50点まで生成</li>
+                        <li>AIモデル着用写真</li>
+                        <li>スタジオ品質画像</li>
+                        <li>メールサポート</li>
+                    </ul>
+                    <a href="#contact" class="price-btn">お問い合わせ</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="price-badge">POPULAR</div>
+                    <div class="price-header">
+                        <h3>Professional</h3>
+                        <p>成長中のECサイト向け</p>
+                    </div>
+                    <div class="price-amount">
+                        <span class="currency">¥</span>
+                        <span class="value">79,800</span>
+                        <span class="period">/月</span>
+                    </div>
+                    <ul class="price-features">
+                        <li>月200点まで生成</li>
+                        <li>全機能利用可能</li>
+                        <li>優先サポート</li>
+                        <li>API連携</li>
+                        <li>カスタムモデル</li>
+                    </ul>
+                    <a href="#contact" class="price-btn primary">お問い合わせ</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Enterprise</h3>
+                        <p>大規模ECサイト向け</p>
+                    </div>
+                    <div class="price-amount">
+                        <span class="value">要相談</span>
+                    </div>
+                    <ul class="price-features">
+                        <li>無制限生成</li>
+                        <li>専任サポート</li>
+                        <li>SLA保証</li>
+                        <li>カスタム開発</li>
+                    </ul>
+                    <a href="#contact" class="price-btn">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTAセクション -->
+    <section class="cta" id="contact">
+        <div class="cta-container">
+            <h2 class="cta-title">
+                未来のEC撮影を、<br>
+                <em>今すぐ体験</em>
+            </h2>
+            <p class="cta-subtitle">無料トライアルでaiWEARの可能性をお試しください</p>
+            <form class="cta-form" id="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="会社名" required>
+                    <input type="email" placeholder="メールアドレス" required>
+                </div>
+                <button type="submit" class="cta-btn">
+                    <span>無料トライアルを開始</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </form>
+            <p class="cta-note">クレジットカード不要 ・ 5分で開始</p>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <span class="footer-logo">aiWEAR</span>
+                    <p>AIで実現する次世代アパレルEC撮影</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Service</h4>
+                        <a href="#features">機能紹介</a>
+                        <a href="#pricing">料金プラン</a>
+                        <a href="#">API</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#">会社概要</a>
+                        <a href="#">お問い合わせ</a>
+                        <a href="#">採用情報</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="#">利用規約</a>
+                        <a href="#">プライバシー</a>
+                        <a href="#">特定商取引法</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 aiWEAR. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
