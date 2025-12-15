@@ -127,28 +127,24 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transitionDelay = `${index * 0.1}s`;
     });
     // Floating particles for hero background
-    console.log('Script executing particle logic');
-    const heroBg = document.querySelector('.hero-bg');
-    console.log('Hero BG found:', heroBg);
-    if (heroBg) {
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
         const particlesContainer = document.createElement('div');
-        console.log('Creating particles container');
         particlesContainer.className = 'hero-particles';
-        heroBg.appendChild(particlesContainer);
+        heroSection.appendChild(particlesContainer);
 
-        for (let i = 0; i < 40; i++) {
+        for (let i = 0; i < 50; i++) {
             const particle = document.createElement('div');
             particle.className = 'particle';
             // Random position
             particle.style.left = `${Math.random() * 100}%`;
             particle.style.top = `${Math.random() * 100}%`;
             // Random animation properties
-            particle.style.animationDelay = `${Math.random() * 5}s`;
-            particle.style.animationDuration = `${5 + Math.random() * 5}s`;
-            particle.style.opacity = Math.random() * 0.5 + 0.2;
+            particle.style.animationDelay = `${Math.random() * 6}s`;
+            particle.style.animationDuration = `${4 + Math.random() * 4}s`;
 
             // Random size variation
-            const size = Math.random() * 3 + 2;
+            const size = Math.random() * 6 + 3;
             particle.style.width = `${size}px`;
             particle.style.height = `${size}px`;
 
